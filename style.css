@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-image: url('assets/iconfundo.png'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Fixa a imagem no fundo */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: black;
+    flex-direction: column; /* Adiciona flex-direction para melhorar a centralização */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    height: auto; /* Permite que a altura da container se ajuste dinamicamente */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    padding: 1rem;
+    
+}
+
+main {
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.70rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.6rem; 
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+input[type="text"], input[type="number"], input[type="file"], input[type="tel"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #F3541C;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+select {
+    cursor: pointer;
+    background-color: #FFFFFF; 
+    color: black;
+    border: 2px solid #F3541C;
+    padding: 0.6rem;
+    border-radius: 8px;
+}
+
+#comprovante, #identidade {
+    display: none;
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    background-color: #fdfdfd;
+    color: rgb(116, 112, 112);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #F3541C;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.upload-label img {
+    width: 40px;
+    height: 40px;
+}
+
+.upload-label:hover {
+    transform: scale(1.05);
+}
+
+/* Centraliza a caixa principal */
+.trilha {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+}
+
+/* Estiliza cada item da trilha */
+.trilhax {
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 32px 16px 16px;
+gap: 8px;
+isolation: isolate;
+text-align: center;
+width: 256px;
+height: 120px;
+
+background: #FFFFFF;
+border: 2px solid #F3541C;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+.trilhax:hover {
+    transform: scale(1.05);
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Ajusta a imagem */
+.trilha-item img {
+/* icon-front */
+
+width: 30.07px;
+height: 25.8px;
+
+background: #131C50;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+button {
+    padding: 12px 24px;
+    background: #FFFFFF;
+    border: 1px solid #E43A12;
+    border-radius: 8px;
+    color: #E43A12;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #E43A12;
+    color: white;
+}
+
+.trilhas-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.imagem {
+    background-color: #2135A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    height: 1900px;
+}
+
+.imagem img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .trilhas-form {
+        flex-direction: column;
+    }
+}
+
+.seta-esquerda::before {
+    content: "\2190"; /* Código Unicode para seta esquerda */
+    margin-right: 5px;
+}
