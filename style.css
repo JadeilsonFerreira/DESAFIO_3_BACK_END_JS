@@ -23,6 +23,16 @@ body {
     flex-direction: column; /* Adiciona flex-direction para melhorar a centralização */
 }
 
+.cabecalho {
+    width: 80%;
+    max-width: 1200px;
+    height: auto; /* Permite que a altura da container se ajuste dinamicamente */
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
